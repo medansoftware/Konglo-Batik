@@ -4,22 +4,22 @@
 
 
     // $('.owl-carousel').owlCarousel({
-    // 	loop: true,
-    // 	margin: 30,
-    // 	nav: true,
-    // 	pagination: true,
-    // 	responsive: {
-    // 		0: {
-    // 			items: 1
-    // 		},
-    // 		600: {
-    // 			items: 1
-    // 		},
-    // 		1000: {
-    // 			items: 2
-    // 		}
-    // 	}
-    // })
+	// 	loop: true,
+	// 	margin: 30,
+	// 	nav: true,
+	// 	pagination: true,
+	// 	responsive: {
+	// 		0: {
+	// 			items: 1
+	// 		},
+	// 		600: {
+	// 			items: 1
+	// 		},
+	// 		1000: {
+	// 			items: 2
+	// 		}
+	// 	}
+	// })
 
 
     $(window).scroll(function() {
@@ -89,7 +89,7 @@
                 var currLink = $(this);
                 var refElement = $(currLink.attr("href"));
 
-                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                if (refElement.position() <= scrollPos && refElement.position() + refElement.height() > scrollPos) {
                     $('.menu-item').removeClass("active");
                     currLink.addClass("active");
                 } else {

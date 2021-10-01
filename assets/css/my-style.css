@@ -1108,135 +1108,7 @@ promotion
     box-shadow: 2px 2px 5px #30303028;
 }
 
-/*
---------------------------------------------
-Team
---------------------------------------------
-*/
 
-#team {
-    padding-top: 100px;
-    position: relative;
-    z-index: 9;
-}
-
-#team .item {
-    position: relative;
-}
-
-#team .item .testimonial-content {
-    background: rgb(244, 129, 63);
-    background: linear-gradient(145deg, #578ef8 0%, var(--gold) 100%);
-    margin-left: 60px;
-    padding: 40px 30px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-#team .item .testimonial-content ul li {
-    display: inline-block;
-    margin: 0px 1px;
-}
-
-#team .item .testimonial-content ul li i {
-    color: #fff;
-    font-size: 13px;
-}
-
-#team .item .testimonial-content h4 {
-    font-size: 22px;
-    margin-top: 20px;
-    color: #fff;
-}
-
-#team .item .testimonial-content p {
-    color: #fff;
-    font-style: italic;
-    font-weight: 200;
-    margin: 20px 0px 15px 0px;
-}
-
-#team .item .testimonial-content span {
-    color: #fff;
-    font-weight: 200;
-    font-size: 13px;
-}
-
-#team .author img {
-    max-width: 120px;
-    margin-bottom: -60px;
-}
-
-/*
---------------------------------------------
-Portfolio
---------------------------------------------
-*/
-
-.right-image-decor {
-    background-image: url(../images/left-bg-decor.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    filter: opacity(50%);
-    position: absolute;
-    width: 100%;
-    display: inline-block;
-    height: 80%;
-    margin-top: 20px;
-}
-
-#portfolio {
-    padding-top: 100px;
-    position: relative;
-    z-index: 9;
-}
-
-#portfolio .item {
-    position: relative;
-}
-
-#portfolio .item .testimonial-content {
-    background: rgb(244, 129, 63);
-    background: linear-gradient(145deg, #578ef8 0%, var(--gold) 100%);
-    margin-left: 60px;
-    padding: 40px 30px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-#portfolio .item .testimonial-content ul li {
-    display: inline-block;
-    margin: 0px 1px;
-}
-
-#portfolio .item .testimonial-content ul li i {
-    color: #fff;
-    font-size: 13px;
-}
-
-#portfolio .item .testimonial-content h4 {
-    font-size: 22px;
-    margin-top: 20px;
-    color: #fff;
-}
-
-#portfolio .item .testimonial-content p {
-    color: #fff;
-    font-style: italic;
-    font-weight: 200;
-    margin: 20px 0px 15px 0px;
-}
-
-#portfolio .item .testimonial-content span {
-    color: #fff;
-    font-weight: 200;
-    font-size: 13px;
-}
-
-#portfolio .author img {
-    max-width: 120px;
-    margin-bottom: -60px;
-}
 
 /*
 --------------------------------------------
@@ -1255,8 +1127,7 @@ testimonials
 }
 
 #testimonials .item .testimonial-content {
-    background: rgb(244, 129, 63);
-    background: linear-gradient(145deg, #578ef8 0%, var(--gold) 100%);
+    background: var(--gold);
     margin-left: 60px;
     padding: 40px 30px;
     text-align: center;
@@ -1309,8 +1180,7 @@ testimonials
     line-height: 80px;
     text-align: center;
     display: inline-block;
-    background: #363ed1;
-    background: linear-gradient(145deg, #578ef8 0%, var(--gold) 100%);
+    background: var(--black);
     position: absolute;
 }
 
@@ -1326,8 +1196,7 @@ testimonials
     line-height: 80px;
     text-align: center;
     display: inline-block;
-    background: var(--gold);
-    background: linear-gradient(145deg, #578ef8 0%, var(--gold) 100%);
+    background: var(--black);
     position: absolute;
 }
 
