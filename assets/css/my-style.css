@@ -135,6 +135,8 @@ ul li {
 
 .title1 {
     font-size: 70px;
+    -webkit-filter: drop-shadow(-0.3vw 2px 0px black); /* Chrome, Safari, Opera */
+    filter: drop-shadow(-0.3vw 2px 0px black);
 }
 
 .subtitle {
