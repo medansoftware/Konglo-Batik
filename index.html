@@ -9,7 +9,7 @@
   <link rel="icon" href="assets//images/favicon.ico" type="image/png" sizes="16x16">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700,800,900&display=swap"
     rel="stylesheet">
-  <title>Konglo Batik | Batik tulis premium</title>
+  <title>Konglo Batik | Batik Tulis Premium</title>
 
 
   <!-- Additional CSS Files -->
@@ -72,8 +72,8 @@
       <div class="container">
         <div class="row">
           <div class="left-text col-lg-8 col-md-12 col-sm-12 col-xs-12"
-            data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-            <h5 class="title1 text-gold"><span>KONGLO</span> <br>BATIK </h5>
+            data-scroll-reveal="enter left move 30px over 0.6s after 0.4s" id="site_name_div">
+            <h5 class="title1 text-gold text-center" id="site_name"></h5>
             <p><a href="store-location.html">OUR STORE LOCATION <span>&rarr;</span></a>
             </p>
             <p class="scroll">
@@ -427,6 +427,7 @@
   <!-- Plugins -->
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.0.3/index.umd.min.js" integrity="sha512-gTOm2r/A/xniYfGxSgdmedAmb7wKw4AoULFwrLgco6m7uQ76rFOqLOlh3tmn8Tt121V0zInEHjQVkFly781vmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Global Init -->
   <script src="assets/js/custom.js"></script>
@@ -452,6 +453,38 @@
         }
       }
     })
+
+
+    if (screen.width <= 656) {
+      var auto = parseInt(screen.width/10);
+      $(".title1").css("fontSize", auto+'px');
+      $(".title1").css("display", 'inline-block');
+      $(".title1").css("white-space", 'nowrap');
+    }
+
+
+    const instance = new TypeIt("#site_name", {
+      speed: 120,
+      lifeLike: false,
+      cursorChar: '_'
+    });
+
+    instance
+    .pause(400)
+    .type("<span>KONGLO</span> BATIK..?", {speed: 80})
+    .pause(1300)
+    .delete(3, {deleteSpeed: 200})
+    .pause(1300)
+    .break()
+    .type("is")
+    .pause(1000)
+    .break()
+    .type("Elegant", {delay: 1200})
+    .delete(7)
+    .type("Comfortable", {delay: 1200})
+    .delete(11)
+    .type("Premium", {delay: 1200, speed: 200})
+    .go();
   </script>
 
 
