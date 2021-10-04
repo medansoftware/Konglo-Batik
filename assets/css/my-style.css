@@ -163,13 +163,12 @@ a {
     text-decoration: none !important;
     color: var(--white);
     letter-spacing: 0.1em;
-    font-size: 12px;
     transition-duration: 1s;
 }
 
 a:hover {
     color: var(--white);
-    letter-spacing: 0.2em;
+    text-decoration: underline !important;
 }
 .page-link {
     color: var(--gold);
@@ -212,6 +211,12 @@ p {
 ul li {
     font-size: 13px;
     line-height: 25px;
+}
+.top-news ul li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid gainsboro;
+
 }
 
 .title1 {
@@ -264,6 +269,13 @@ ul li {
 
 .text-black:hover {
     color: var(--black);
+}
+.text-grey {
+    color: #bababa;
+}
+
+.text-grey:hover {
+    color: #bababa;
 }
 
 .green {
@@ -1026,6 +1038,7 @@ about
 #about {
     position: relative;
     z-index: 9;
+    min-height: 80vh;
 }
 
 @media (max-width: 992px) {
@@ -1063,7 +1076,7 @@ about
 
 .features-item h4 {
     margin-top: 0px;
-    font-size: 22px;
+    font-size: 18px;
     color: #4b4b4b;
 }
 
@@ -1235,14 +1248,6 @@ testimonials
     }
 }
 
-/* 
---------------------------------------------
-ABOUT
--------------------------------------------- */
-
-#about {
-    min-height: 80vh;
-}
 
 /* 
 ---------------------------------------------
@@ -1347,16 +1352,15 @@ CART
 -------------------------------------------
   */
 
-#products {
-    padding-bottom: 2rem;
-}
-
-.product-tag {
+.card-padding {
     padding: 0.75rem 1rem 1rem 1rem;
 }
 .product-detail-nav {
     min-height: 80px;
     display: block;
+}
+.pagination {
+    padding-bottom: 2rem;
 }
 /* 
 ---------------------------------------------
