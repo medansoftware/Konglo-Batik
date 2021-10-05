@@ -21,6 +21,8 @@
 
   <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
+  <link rel="stylesheet" href="assets/css/chatbox.css">
+
 </head>
 
 <body>
@@ -360,10 +362,37 @@
   <!-- ***** Testimonials Ends ***** -->
 
 
+  <!-- ***** Chatbox ***** -->
 
+  <div id="chat-circle" class="btn btn-raised">
+    <div id="chat-overlay"></div>
+    <i class="fa fa-comments"></i>
+  </div>
 
-  <!-- ***** Item End ***** -->
+  <div class="chat-box">
+    <div class="chat-box-header">
+      Customer Service
+      <span class="chat-box-toggle">&#xd7;</span>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-box-overlay">
+      </div>
+      <div class="chat-logs">
 
+      </div>
+      <!--chat-log -->
+      <div class="chat-input">
+        <form>
+          <input type="text" id="chat-input" placeholder="Send a message..." />
+          <button type="submit" class="chat-submit" id="chat-submit"><i class="fa fa-send"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** chatbox End ***** -->
+
+  
   <!-- ***** Item End ***** -->
 
   <footer class="footer-area bg-dark">
@@ -396,7 +425,7 @@
             <hr class="hr-gold">
 
             <ul class="information-links pdt-1">
-                            <li><a href="blog.html">Blog</a></li>
+              <li><a href="blog.html">Blog</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="store-location.html">Store Location</a></li>
             </ul>
@@ -434,9 +463,12 @@
   <script src="assets/js/bootstrap.min.js"></script>
 
   <!-- Plugins -->
+  <script src="assets/js/chatbox.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/scrollreveal.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.0.3/index.umd.min.js" integrity="sha512-gTOm2r/A/xniYfGxSgdmedAmb7wKw4AoULFwrLgco6m7uQ76rFOqLOlh3tmn8Tt121V0zInEHjQVkFly781vmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/8.0.3/index.umd.min.js"
+    integrity="sha512-gTOm2r/A/xniYfGxSgdmedAmb7wKw4AoULFwrLgco6m7uQ76rFOqLOlh3tmn8Tt121V0zInEHjQVkFly781vmg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Global Init -->
   <script src="assets/js/custom.js"></script>
@@ -465,8 +497,8 @@
 
 
     if (screen.width <= 656) {
-      var auto = parseInt(screen.width/10);
-      $(".title1").css("fontSize", auto+'px');
+      var auto = parseInt(screen.width / 10);
+      $(".title1").css("fontSize", auto + 'px');
       $(".title1").css("display", 'inline-block');
       $(".title1").css("white-space", 'nowrap');
     }
@@ -479,21 +511,21 @@
     });
 
     instance
-    .pause(400)
-    .type("<span>KONGLO</span> BATIK..?", {speed: 80})
-    .pause(1300)
-    .delete(3, {deleteSpeed: 200})
-    .pause(1300)
-    .break()
-    .type("is")
-    .pause(1000)
-    .break()
-    .type("<b>E</b>legant", {delay: 1200})
-    .delete(7)
-    .type("<b>C</b>omfortable", {delay: 1200})
-    .delete(11)
-    .type("<b>Premium</b>", {delay: 1200, speed: 200})
-    .go();
+      .pause(400)
+      .type("<span>KONGLO</span> BATIK..?", { speed: 80 })
+      .pause(1300)
+      .delete(3, { deleteSpeed: 200 })
+      .pause(1300)
+      .break()
+      .type("is")
+      .pause(1000)
+      .break()
+      .type("<b>E</b>legant", { delay: 1200 })
+      .delete(7)
+      .type("<b>C</b>omfortable", { delay: 1200 })
+      .delete(11)
+      .type("<b>Premium</b>", { delay: 1200, speed: 200 })
+      .go();
   </script>
 
 
