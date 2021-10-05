@@ -444,7 +444,10 @@ button.main-button {
 button.main-button:hover {
     background-color: var(--dark);
 }
-
+.stepper{
+    width: 110px;
+    float: right;
+}
 .center-heading {
     margin-bottom: 70px;
 }
@@ -521,7 +524,7 @@ background
 }
 
 .bg-1 {
-    background-image: url(../images/bg-1.jpg);
+    background-image: url(../images/banner/pexels-rizky-rafael-8967206.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -529,7 +532,7 @@ background
 }
 
 .bg-2 {
-    background-image: url(../images/bg-2.jpg);
+    background-image: url(../images/banner/batik.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -537,7 +540,7 @@ background
 }
 
 .bg-3 {
-    background-image: url(../images/bg-3.jpg);
+    background-image: url(../images/banner/bg-1.jpg);
     height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -962,11 +965,13 @@ header
 welcome
 --------------------------------------------- 
 */
+.home{
+    background-image: url(../images/banner/banner-bg.jpg);
+}
 
 .welcome-area {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/banner-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -1034,7 +1039,9 @@ material
 about
 ---------------------------------------------
 */
-
+.about{
+    background-image: url(../images/banner/photo-1630930014595-019a27a959b5.jpg);
+}
 #about {
     position: relative;
     z-index: 9;
@@ -1147,10 +1154,6 @@ promotion
     box-shadow: 2px 2px 5px #30303028;
 }
 
-.porto-image {
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px #30303028;
-}
 
 /*
 --------------------------------------------
@@ -1249,6 +1252,15 @@ testimonials
 }
 
 
+.store{
+    background-image: url(../images/banner/photo-1444362408440-274ecb6fc730.jpg);
+}
+#store {
+    position: relative;
+    z-index: 9;
+    min-height: 80vh;
+}
+
 /* 
 ---------------------------------------------
 CART
@@ -1293,7 +1305,7 @@ CART
 }
 
 .cart-menu-down table .ordered {
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .cart-menu-down table .detail {
@@ -1362,6 +1374,14 @@ CART
 .pagination {
     padding-bottom: 2rem;
 }
+
+
+/* Collection */
+
+.collection{
+    background-image: url(../images/banner/bg-1.jpg);
+}
+
 /* 
 ---------------------------------------------
 footer

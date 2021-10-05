@@ -40,12 +40,21 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="index.html" class="menu-item">Home</a></li>
               <li><a href="collections.html" class="menu-item">Collections</a></li>
               <li><a href="products.html" class="menu-item">Products</a></li>
+              <li><a href="blog.html" class="menu-item">Blog</a></li>
               <li><a href="about.html" class="menu-item">About Us</a></li>
               <li><a href="store-location.html" class="menu-item">store </a></li>
-              <li><a href="login.html" class="menu-item">Login</a></li>
+              <!-- <li><a href="login.html" class="menu-item">Login</a></li> -->
+              <li class="submenu">
+                <a href="javascript:;">Account</a>
+                <ul>
+                  <li><a href="profile.html" class="menu-item">Profile</a></li>
+                  <li><a href="orders.html" class="menu-item">Orders</a></li>
+                  <li><a href="login.html" class="menu-item">Login</a></li>
+                  <li><a href="signup.html" class="menu-item">Sign Up</a></li>
+                </ul>
+              </li>
               <!-- Cart -->
               <li>
                 <a href="cart.html">
@@ -114,19 +123,55 @@
             <br>
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <div class="input-group mb-3">
-                  <select class="custom-select" id="size" name="size">
-                    <option selected>Size</option>
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
-                  </select>
+                <div class="row">
+                  <div class="col">
+                    <!-- Stepper-grup -->
+                    <div class="input-group input-group-sm mb-3">
+                      <div class="input-group-prepend">
+                        <span class="btn btn-stepper input-group-text btn-minus">-</span>
+                      </div>
+                      <input type="text" class="form-control text-center" value="0" aria-label="Small"
+                        aria-describedby="inputGroup-sizing-sm">
+                      <div class="input-group-append">
+                        <span class="btn btn-stepper input-group-text btn-plus">+</span>
+                      </div>
+                    </div>
+                    <!-- /input-group -->
+                  </div>
+                  <div class="col">
+                    <!-- Size-grup -->
+                    <div class="input-group input-group-sm mb-3">
+                      <select class="custom-select" id="size" name="size">
+                        <option selected>Size</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                      </select>
+                    </div>
+                    <!-- /input-group -->
+                  </div>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
                 <button class="main-button">Add To Cart</button>
               </div>
+            </div>
+          </div>
+          <br>
+          <div class=" bg-white pd-2 shadow">
+            <div class="testimonial-content">
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h4>Jonathan Smart</h4>
+              <p>“Nullam hendrerit, elit a semper pharetra, ipsum nibh tristique tortor, in tempus
+                urna elit in mauris.”</p>
+              <span>Besta CTO</span>
             </div>
           </div>
         </div>
@@ -163,9 +208,9 @@
             <hr class="hr-gold">
 
             <ul class="quick-links pdt-1">
-              <li><a href="collections.html">Collections</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="products.html">Products</a></li>
-              <li><a href="about.html">About Us</a></li>
+              <li><a href="collections.html">Collections</a></li>
             </ul>
           </div>
         </div>
@@ -176,9 +221,9 @@
             <hr class="hr-gold">
 
             <ul class="information-links pdt-1">
-              <li><a href="login.html">Login</a></li>
-              <li><a href="signup.html">Signup</a></li>
-              <li><a href="store-location.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="store-location.html">Store Location</a></li>
             </ul>
           </div>
         </div>
