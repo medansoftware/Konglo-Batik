@@ -42,64 +42,7 @@ reset
 --------------------------------------------- 
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-div pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-figure,
-header,
-nav,
-section,
-article,
-aside,
-footer,
-figcaption {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, figure, header, nav, section, article, aside, footer, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -127,20 +70,13 @@ html[xmlns] .clearfix {
     height: 1%;
 }
 
-ul,
-li {
+ul, li {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-header,
-nav,
-section,
-article,
-aside,
-footer,
-hgroup {
+header, nav, section, article, aside, footer, hgroup {
     display: block;
 }
 
@@ -148,8 +84,7 @@ hgroup {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     background-color: var(--black);
@@ -170,19 +105,16 @@ a:hover {
     color: var(--white);
     text-decoration: underline !important;
 }
+
 .page-link {
     color: var(--gold);
 }
+
 .page-link:hover {
     color: var(--gold);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: "Oranienbaum", serif;
@@ -190,12 +122,7 @@ h6 {
     line-height: 1.1;
 }
 
-h1 span,
-h2 span,
-h3 span,
-h4 span,
-h5 span,
-h6 span {
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     font-weight: bold;
 }
 
@@ -212,16 +139,17 @@ ul li {
     font-size: 13px;
     line-height: 25px;
 }
-.top-news ul li{
+
+.top-news ul li {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: 1px solid gainsboro;
-
 }
 
 .title1 {
     font-size: 70px;
-    -webkit-filter: drop-shadow(-0.3vw 2px 0px black); /* Chrome, Safari, Opera */
+    -webkit-filter: drop-shadow(-0.3vw 2px 0px black);
+    /* Chrome, Safari, Opera */
     filter: drop-shadow(-0.3vw 2px 0px black);
 }
 
@@ -240,6 +168,7 @@ ul li {
 .text-left {
     text-align: left;
 }
+
 .text-right {
     text-align: right;
 }
@@ -263,6 +192,7 @@ ul li {
 .text-gold:hover {
     color: var(--gold);
 }
+
 .text-black {
     color: var(--black);
 }
@@ -270,6 +200,7 @@ ul li {
 .text-black:hover {
     color: var(--black);
 }
+
 .text-grey {
     color: #bababa;
 }
@@ -316,6 +247,7 @@ ul li {
 .pd-1 {
     padding: 1rem;
 }
+
 .pd-2 {
     padding: 2rem;
 }
@@ -343,6 +275,7 @@ ul li {
 .pdb-3 {
     padding-bottom: 3rem;
 }
+
 .mgb-1 {
     margin-bottom: 1rem;
 }
@@ -360,14 +293,20 @@ ul li {
     margin-bottom: auto;
 }
 
+/* Input */
+
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--gold);
+}
+
 /* 
 ---------------------------------------------
 global styles
 --------------------------------------------- 
 */
 
-html,
-body {
+html, body {
     background: #fff;
     font-family: "Quicksand", sans-serif;
 }
@@ -444,10 +383,12 @@ button.main-button {
 button.main-button:hover {
     background-color: var(--dark);
 }
-.stepper{
+
+.stepper {
     width: 110px;
     float: right;
 }
+
 .center-heading {
     margin-bottom: 70px;
 }
@@ -563,8 +504,7 @@ header
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
-.background-header .logo,
-.background-header .main-nav .nav li a {
+.background-header .logo, .background-header .main-nav .nav li a {
     color: white !important;
 }
 
@@ -746,9 +686,7 @@ header
     display: none;
 }
 
-.header-area .main-nav .menu-trigger span,
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav .menu-trigger span, .header-area .main-nav .menu-trigger span:before, .header-area .main-nav .menu-trigger span:after {
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -761,14 +699,11 @@ header
     left: 0;
 }
 
-.background-header .main-nav .menu-trigger span,
-.background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
+.background-header .main-nav .menu-trigger span, .background-header .main-nav .menu-trigger span:before, .background-header .main-nav .menu-trigger span:after {
     background-color: var(--white);
 }
 
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav .menu-trigger span:before, .header-area .main-nav .menu-trigger span:after {
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -782,13 +717,11 @@ header
     width: 75%;
 }
 
-.background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
+.background-header .main-nav .menu-trigger span:before, .background-header .main-nav .menu-trigger span:after {
     background-color: var(--white);
 }
 
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav .menu-trigger span:before, .header-area .main-nav .menu-trigger span:after {
     content: "";
 }
 
@@ -813,9 +746,7 @@ header
     top: 10px;
 }
 
-.header-area .main-nav .menu-trigger.active span,
-.header-area .main-nav .menu-trigger.active span:before,
-.header-area .main-nav .menu-trigger.active span:after {
+.header-area .main-nav .menu-trigger.active span, .header-area .main-nav .menu-trigger.active span:before, .header-area .main-nav .menu-trigger.active span:after {
     background-color: transparent;
     width: 100%;
 }
@@ -948,8 +879,7 @@ header
         font-size: 14px;
         top: 15px;
     }
-    .header-area .main-nav .nav li.submenu:hover ul,
-    .header-area .main-nav .nav li.submenu:focus ul {
+    .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
         height: 0px;
     }
 }
@@ -965,7 +895,8 @@ header
 welcome
 --------------------------------------------- 
 */
-.home{
+
+.home {
     background-image: url(../images/banner/banner-bg.jpg);
 }
 
@@ -1039,9 +970,11 @@ material
 about
 ---------------------------------------------
 */
-.about{
+
+.about {
     background-image: url(../images/banner/photo-1630930014595-019a27a959b5.jpg);
 }
+
 #about {
     position: relative;
     z-index: 9;
@@ -1154,7 +1087,6 @@ promotion
     box-shadow: 2px 2px 5px #30303028;
 }
 
-
 /*
 --------------------------------------------
 testimonials
@@ -1251,10 +1183,10 @@ testimonials
     }
 }
 
-
-.store{
+.store {
     background-image: url(../images/banner/photo-1444362408440-274ecb6fc730.jpg);
 }
+
 #store {
     position: relative;
     z-index: 9;
@@ -1352,6 +1284,7 @@ CART
     background-color: var(--white);
     padding: 4rem 3rem;
 }
+
 .login-card img {
     display: block;
     margin: 0 auto;
@@ -1367,19 +1300,33 @@ CART
 .card-padding {
     padding: 0.75rem 1rem 1rem 1rem;
 }
+
 .product-detail-nav {
     min-height: 80px;
     display: block;
 }
+
 .pagination {
     padding-bottom: 2rem;
 }
 
-
 /* Collection */
 
-.collection{
+.collection {
     background-image: url(../images/banner/bg-1.jpg);
+}
+
+/* Zoom */
+
+.item-zoo {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin-bottom: 25px;
+}
+
+#product-detail .active {
+    border: 2px solid var(--gold);
 }
 
 /* 
@@ -1426,7 +1373,7 @@ preloader
     height: 50px;
 }
 
-#preloader .jumper > div {
+#preloader .jumper>div {
     background-color: #fff;
     width: 10px;
     height: 10px;
@@ -1441,12 +1388,12 @@ preloader
     animation: jumper 1s 0s linear infinite;
 }
 
-#preloader .jumper > div:nth-child(2) {
+#preloader .jumper>div:nth-child(2) {
     -webkit-animation-delay: 0.33333s;
     animation-delay: 0.33333s;
 }
 
-#preloader .jumper > div:nth-child(3) {
+#preloader .jumper>div:nth-child(3) {
     -webkit-animation-delay: 0.66666s;
     animation-delay: 0.66666s;
 }
@@ -1484,8 +1431,7 @@ preloader
 /* Media */
 
 @media (max-width: 991px) {
-    html,
-    body {
+    html, body {
         overflow-x: hidden;
     }
     .mobile-top-fix {

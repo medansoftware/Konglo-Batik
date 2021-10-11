@@ -21,6 +21,9 @@
 
   <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
+  <!-- Zoom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
+
 </head>
 
 <body>
@@ -83,15 +86,44 @@
 
 
   <!-- ***** Item Start ***** -->
-  <section class="section section-content" id="about">
+  <section class="section section-content" id="product-detail">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
           data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-          <div class=" bg-white pd-1 shadow">
+          <div class="pd-1 bg-white shadow">
+            <div class="item-zoo">
+              <!-- Zoom image -->
+              <figure class="zoo-item" data-zoo-image="assets/images/product/prada.jpg" data-zoo-scale="2"></figure>
+            </div>
+            <!-- Items -->
+            <div class="row">
+              <div class="col-3">
+                <a href="#">
+                  <img  class="active" width="100%"
+                    src="assets/images/product/prada.jpg">
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#">
+                  <img width="100%"
+                    src="assets/images/product/prada.jpg">
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#">
+                  <img width="100%"
+                    src="assets/images/product/prada.jpg">
+                </a>
+              </div>
+              <div class="col-3">
+                <a href="#">
+                  <img width="100%"
+                    src="assets/images/product/prada.jpg">
+                </a>
+              </div>
+            </div>
 
-            <img width="100%" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s"
-              src="assets/images/product/prada.jpg">
           </div>
         </div>
         <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12"
@@ -220,7 +252,7 @@
             <hr class="hr-gold">
 
             <ul class="information-links pdt-1">
-                            <li><a href="blog.html">Blog</a></li>
+              <li><a href="blog.html">Blog</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="store-location.html">Store Location</a></li>
             </ul>
@@ -252,6 +284,13 @@
   <!-- jQuery -->
   <script src="assets/js/jquery-2.1.0.min.js"></script>
 
+  <!-- Zoom -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>
+
+  <!-- Starting the ZooMove -->
+  <script>
+    $('.zoo-item').ZooMove();
+  </script>
 
   <!-- Bootstrap -->
   <script src="assets/js/popper.js"></script>
